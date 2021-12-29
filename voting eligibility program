@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int age;
+
+	cout<<"Enter your age: ";
+	cin>>age;
+	
+	
+   // checking in which range the person comes in
+
+	if(age>=13 && age<=19)
+	{
+		cout<<"Person is Teenager"<<endl;
+	}
+	else if(age>=20 && age<40){
+        cout<<"Person is an adult"<<endl;
+    }
+    else if(age>=40 && age<60){
+        cout<<"Person is an Adult"<<endl;
+    }
+    else if(age>=60 && age<100){
+        cout<<"Person is Senior Adult"<<endl;
+    }
+    else{
+
+        cout<<"Invalid age input"<<endl;
+    }
+	
+
+
+	//condition to check voting eligility
+	if(age>=18)
+	{
+		cout<<"Personl is eligible for voting"<<endl;
+	}
+	else
+	{
+		cout<<"Person is not eligible for voating"<<endl;
+	}
+
+	return 0;
+}
